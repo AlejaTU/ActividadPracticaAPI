@@ -6,3 +6,11 @@
 //
 
 import Foundation
+struct Genre: Decodable {
+    let id: Int
+    let name: String
+}
+
+struct GenresResponse: Decodable {
+    let genres: [Genre]
+}
